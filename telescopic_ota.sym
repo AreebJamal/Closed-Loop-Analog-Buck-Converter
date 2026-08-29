@@ -1,0 +1,41 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+spectre_format="@name ( @pinlist ) @symname"
+template="name=x1"
+}
+V {}
+S {}
+F {}
+E {}
+L 4 -150 -50 -130 -50 {}
+L 4 -150 -30 -130 -30 {}
+L 4 130 -30 150 -30 {}
+L 4 -150 -10 -130 -10 {}
+L 4 -150 10 -130 10 {}
+L 4 -150 30 -130 30 {}
+L 4 -150 50 -130 50 {}
+L 7 10 -80 10 -60 {}
+L 7 10 60 10 80 {}
+B 5 7.5 -82.5 12.5 -77.5 {name=vdd dir=inout}
+B 5 -152.5 -52.5 -147.5 -47.5 {name=vbias_top dir=in}
+B 5 -152.5 -32.5 -147.5 -27.5 {name=vbias_casc dir=in}
+B 5 147.5 -32.5 152.5 -27.5 {name=vout dir=out}
+B 5 -152.5 -12.5 -147.5 -7.5 {name=vcascode dir=in}
+B 5 -152.5 7.5 -147.5 12.5 {name=vbuck_out dir=in}
+B 5 -152.5 27.5 -147.5 32.5 {name=vref dir=in}
+B 5 -152.5 47.5 -147.5 52.5 {name=vbias_tail dir=in}
+B 5 7.5 77.5 12.5 82.5 {name=gnd dir=inout}
+P 4 5 130 -60 -130 -60 -130 60 130 60 130 -60 {}
+T {@symname} -81 -6 0 0 0.3 0.3 {}
+T {@name} 135 -72 0 0 0.2 0.2 {}
+T {vdd} 15 -54 0 1 0.2 0.2 {}
+T {vbias_top} -125 -54 0 0 0.2 0.2 {}
+T {vbias_casc} -125 -34 0 0 0.2 0.2 {}
+T {vout} 125 -34 0 1 0.2 0.2 {}
+T {vcascode} -125 -14 0 0 0.2 0.2 {}
+T {vbuck_out} -125 6 0 0 0.2 0.2 {}
+T {vref} -125 26 0 0 0.2 0.2 {}
+T {vbias_tail} -125 46 0 0 0.2 0.2 {}
+T {gnd} 15 46 0 1 0.2 0.2 {}
